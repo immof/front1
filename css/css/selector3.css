@@ -1,0 +1,57 @@
+/*일반 구조 ㅓㄴ택자*/
+#div1>p:first-child{
+    background-color: tomato;
+    color: white;
+}
+
+#div1>p:last-child{
+    background-color: violet;
+    color: white;
+}
+
+#div1>p:nth-child(3){
+    background-color: yellowgreen;
+    color: white;
+}
+
+#div>p:nth-last-child(2){
+    background-color: aqua;
+    color: white;
+}
+
+/* 형태구조 선택자*/
+#div2>p:first-of-type{
+    background-color: tomato;
+    color: white;
+}
+#div2>p:last-of-type{
+    background-color: violet;
+    color: white;
+}
+
+#div2>p:nth-of-type(2n){
+    background-color: yellowgreen;
+    color: white;
+}
+
+#div2>p:nth-last-of-type(2){
+    background-color: aquamarine;
+    color: white;
+}
+/*문자 선택자*/
+#text3>p::first-letter{
+    color: coral;
+}
+#text3>p::first-line{
+    background-color: cornflowerblue;
+}
+#text3>p::selection{
+    background-color: red;
+    color: white;
+}
+
+/*부정선택자*/
+#test4>p:not(:nth-of-type(2n)){
+    background-color: tomato;
+    color: white;
+}

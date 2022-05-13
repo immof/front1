@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그</title>
+</head>
+<body>
+    <!-- test.html 페이지에 get 방식으로 데이터를 전송하는 form 태그-->
+    <form action="test.html" method="get">
+        아이디 : <input type="text" name="idid" value="안녕하세요"><br>
+        비밀번호 : <input type="password" name="pwpw"><br>
+        <!-- input type="submit" submit이 속해 있는 form 태그를 action 페이지로 제출하는 버튼-->
+        <input type="submit" value="로그인">   <br>
+        <input type="text" name="abc"><br>
+    </form>
+    <!-- form 밖에 있는 input은 데이터가 전송되지 않음-->
+    <input type="text" name="aaa">
+    <form action="test.html" method="get">
+        <fieldset>
+            아이디 : <input type="text" name="memberId"><br>
+            비밀번호 : <input type="password" name="memberPw"><br>
+            <input type="submit" value="로그인">
+            <input type="reset" value="초기화">
+        </fieldset>
+    </form>
+    <hr>
+    <form action="test2.html" method="post">
+        <fieldset>
+            <legend> input 태그 속성 테스트</legend>
+            value 속성 : <input type="text" name="input1" value="자동으로 입력되는 값"><br>
+            placeholder 속성 : <input type="text" name="input2" placeholder="아이디"><br>
+            readonly 속성 : <input type="text" name="input3" value="읽기 전용" readonly><br>
+            disabled 속성 : <input type="text" name="input4" value="비활성화" disabled><br>
+            requited 속성 : <input type="text" name="input5" required><br>
+        </fieldset>
+    </form>
+    <hr>
+    <form action="test3.html" method="get">
+        <fieldset>
+            <legend>input type 종류</legend>
+            text : <input type="text" name="a"><br>
+            password : <input type="password" name="b"><br>
+            hidden : <input type="hidden" name="c" value="숨겨진 값"><br>
+            button : <input type="button" value="클릭" onclick="func1();"><br>
+            <!--
+                form 태그 내부에서 기능을 위한 button 태그를 사용하는 경우
+                반드시 type="botton" 속성을 설정해야 함
+                type 속성을 생략하는 경우에는 자동으로 submit으로 동작
+            -->
+            기능을 위한 버튼 : <button type="button">기능기능</button><br>
+            file : <input type="file" name="d"> <br>
+            radio : <br>
+                <!-- name 속성이 같은 여러 radio 타입 중 1개만 선택이 가능-->
+                <input type="radio" name="e" value="1">일<br>
+                <input type="radio" name="e" value="2">이<br>
+                <input type="radio" name="e" value="3">삼<br>
+                <input type="radio" name="e" value="4">사<br> 
+                <!-- 동일한 name으로 여러값을 선택해서 데이터를 전송할 때-->
+            checkbox : <br>
+            <input type="checkbox" name="f" value="1">일<br>
+            <input type="checkbox" name="f" value="2">이<br>
+            <input type="checkbox" name="f" value="3">삼<br>
+            <input type="checkbox" name="f" value="4">사<br>
+            <input type="submit" value="제출">
+            <button type="submit">제출하기</button>
+        </fieldset>
+    </form>
+        <hr>
+        <form action="test4.html" method="post">
+            <fieldset>
+                <legend>회원가입</legend>
+                아이디 : <input type="text" name="id" required><br>
+                비밀번호 : <input type="password" name="pw" required><br>
+                이름 : <input type="text" name="name" required><br>
+                성별 : 
+                    <input type="radio" name="gender" value="남" id="m"> <label for="m">남성</label>
+                    <input type="radio" name="gender" value="여" id="f"> <label for="f">여성</label>
+                <br>
+                취미 :
+                    <label> <input type="checkbox" name="hobby" value="잠"> 잠자기 </label>
+                    <label><input type="checkbox" name="hobby" value="독서"> 독서 </label>
+                    <label> <input type="checkbox" name="hobby" value="게임"> 게임</label>
+                    <label> <input type="checkbox" name="hobby" value="코딩"> 코딩</label>
+                <br>
+                <input type="submit" value="회원가입">
+                <input type="reset" value="초기화">
+            </fieldset>
+        </form>
+
+    <form action="test5.html" method="get">
+        <fieldset>
+            <legend>input type - HTML5 양식 - 1</legend>
+            color : <input type="color" name="a"><br>
+            date : <input type="date" name="b" min="2022-02-15" max="2022-02-28"><br>
+            datetime-local : <input type="datetime-local" name="c"><br>
+            month : <input type="month" name="d"><br>
+            week  : <input type="week" name="e"><br>
+            time  : <input type="time" name="f"><br>
+            number : <input type="number" name="g" min="1" max="10" step="2" value="1" ><br>
+            range : <input type="range" name="h" min="1" max="100" value="20"><br>
+            search : <input type="search" name="i"><br>
+            url : <input type="url" name="j"><br>
+            email : <input type="email" name="k"><br> 
+            <input type="submit" value="제출">
+        </fieldset>
+    </form>
+    <form action="test6.html" method="get">
+        <fieldset>
+            <legend>값 전송을 위한 input 태그 이외의 태그</legend>
+            <select name="a">
+                <option value="1">일</option>
+                <option value="2">이</option>
+                <option value="3">삼</option>
+                <option value="4">사</option>
+            </select>
+        </fieldset>
+    </form>
+    <br>
+    <textarea name="c" cols="40" rows="10">ASDFSDF </textarea>
+    <br>
+    <input type="submit" value="제출">
+
+</body>
+</html>

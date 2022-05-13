@@ -1,0 +1,19 @@
+.hearder{
+    width: 600px;
+    border: solid 1px black;
+}
+
+div{
+    
+}
+#title{
+    width: 200px;
+}
+#content{
+    height: 200px;
+    width: 200px;
+}
+
+.b{
+    width: 600px;
+}

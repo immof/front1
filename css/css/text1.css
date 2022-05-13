@@ -1,0 +1,64 @@
+.ff1{
+    font-family: "궁서체";
+}
+.ff2{
+    font-family: "고딕체","궁서체","바탕체";
+}
+.ff3{
+    font-family: "없는글꼴1","없는글꼴2";
+}
+.webfont1{
+    font-family: 'Nanum Pen Script', cursive;
+}
+/* 다운로드 한 글꼴을 등록*/
+@font-face {
+    font-family: ns-light;
+    src: url(../Noto_Sans_KR/NotoSansKR-Light.otf);
+}
+.webfont2{
+    font-family: ns-light;
+}
+@font-face {
+    font-family: ns-black;
+    src: url(../Noto_Sans_KR/NotoSansKR-Black.otf);
+}
+.webfont3{
+    font-family: ns-black;
+}
+.size1{
+    font-size: 30px;
+}
+.size2{
+    font-size: 1.5em;
+}
+.fw1{
+    font-weight: normal;
+}
+.fw2{
+    font-weight: lighter;
+}
+.fw3{
+    font-weight: bold;
+}
+.fw4{
+    font-weight: bolder;
+}
+.fv{
+    font-variant: small-caps;
+}
+.fs1{
+    font-style: italic;
+}
+.fs2{
+    font-style: oblique;
+}
+.f1{
+    line-height: 50px;
+}
+.f2{
+    font: 16px/30px "궁서체";
+    
+}
+.f3{
+    font: italic bold 20px/20px "고딕체";
+}

@@ -1,0 +1,284 @@
+.div1{
+    /*블럭요소 넓이를 지정하지 않으면 부모 넓이의 100%*/
+    
+    height: 100px;
+    background-color: blanchedalmond;
+}
+
+.div2{
+    width: 50%;
+    height: 100px;
+    background-color: cadetblue;
+}
+
+.div1>div{
+    width: 50%;
+    height: 50px;
+    background-color: cornflowerblue;
+}
+
+.div2{
+    width: 50%;
+    height: 100px;
+    background-color: cadetblue;
+}
+.div2>div{
+    width: 50%;
+    height: 50px;
+    background-color: tomato;
+}
+
+.div3{
+    width: 500px;
+    height: 100px;
+    background-color: burlywood;
+}
+
+.div3>div{
+    /*hiehgt를 지정하지 않으면 내부 컨테츠의 높이만큼*/
+    width: 50%;
+    background-color: crimson;
+    height: 50px;
+}
+
+.div4{
+    background-color: blueviolet;
+    display: inline-block;
+}
+
+.span1{
+    background-color: bisque;
+    display: inline-block;
+}
+
+.span2{
+    background-color: cadetblue;
+    display: inline-block;
+}
+
+.span3{
+    background-color: aquamarine;
+    display: inline-block;
+}
+
+.dis{
+    width: 200px;
+    height: 200px;
+}
+.span4{
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    display: inline-block;
+}
+.span5{
+    width: 150px;
+    height: 150px;
+    background-color: yellowgreen;
+    display: inline-block;
+}
+
+.ul1{
+    display: none;
+}
+
+.div5{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.div5:hover+.ul1{
+    display: block;
+}
+
+.div{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+#b1{
+    border-top-style: solid;
+    border-left-style: dashed;
+    border-bottom: dotted;
+    border-right-style: double;
+    border-top-width: 1px;
+    border-left-width: 2px;
+    border-right-width: 4px;
+    border-bottom-width: 6px;
+    border-top-color: blue;
+    border-left-color: coral;
+    border-bottom-color: aquamarine;
+    border-right-color: red;
+}
+
+#b2{
+    border-style: groove;
+    border-color: crimson;
+}
+
+#b3{
+border-style: outset;
+}
+
+#b3:active{
+    border-style: inset;
+}
+
+#b4{
+    border-style: inset;
+}
+
+#b5{
+    border-style: ridge;
+}
+
+#b6{
+    border: 5px solid red;
+}
+
+#b7{
+    border: 10px dashed blue;
+}
+
+#b8{
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+}
+
+#b9{
+    border: 2px dashed red;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+#b10{
+    border: 3px solid blue;
+    border-radius: 50px;
+}
+
+#b11{
+    border: 3px solid black;
+    box-shadow: 5px 5px 3px 2px gray;
+}
+
+#b12{
+    border-style: ridge;
+    box-shadow: 5px 5px 3px 2px gray;;
+}
+
+#b13{
+    border-style: hidden;
+    box-shadow: 5px 5px 3px 2px gray;;
+}
+
+.div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#c1{
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-style: dashed ;
+    border-right-style: dashed;
+    border-top-left-radius: 50px;
+    border-width: 5px;
+    border-color: blue;
+}
+
+#c2{
+    border-top-style: dashed;
+    border-left-style: dashed;
+    border-bottom-style: dashed ;
+    border-right-style: dashed;
+    border-width: 5px;
+    border-color: black;
+}
+#c3{
+    border-top-style: solid;
+    border-left-style: dashed;
+    border-bottom-style: dashed ;
+    border-right-style: solid;
+    border-top-right-radius: 50px;
+    border-width: 5px;
+    border-color: green;
+}
+#c4{
+    border-style: dashed;
+    border-width: 5px;
+    border-color: black;
+}
+#c5{
+    border-style: dotted;
+    border-width: 5px;
+    border-color: pink;
+}
+#c6{
+    border-style: dashed;
+    border-width: 5px;
+    border-color: black;
+}
+#c7{
+    border-top-style: dashed;
+    border-left-style: solid;
+    border-bottom-style: solid ;
+    border-right-style: dashed;
+    border-bottom-left-radius: 50px;
+    border-width: 5px;
+    border-color: yellow;
+}
+#c8{
+    border-style: dashed;
+    border-width: 5px;
+    border-color: black;
+}
+#c9{
+    border-top-style: dashed;
+    border-left-style: dashed;
+    border-bottom-style: solid ;
+    border-right-style: solid;
+    border-bottom-right-radius: 50px;
+    border-width: 5px;
+    border-color: red;
+}
+
+.div-m{
+    width:300px;
+    height: 300px;
+    border: 10px solid black;
+    background-color: antiquewhite;
+}
+
+.div6{
+    margin: 100px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.div7{
+    padding: 20px;
+}
+
+.div8{
+    width: 500px;
+    height: 300px;
+    background-color: blanchedalmond;
+}
+
+.div9{
+    width: 500px;
+    padding: 100px 0px;
+    background-color: blanchedalmond;
+}
+
+.div10{
+    width: 50%;
+    height: 100px;
+    background-color: orangered;
+}

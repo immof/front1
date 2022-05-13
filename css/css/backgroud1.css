@@ -1,0 +1,112 @@
+body{
+    background-image: url(/image/flower1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.div1{
+    background-color: #fff;
+}
+.div2{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.clip-wrap{
+    overflow: hidden;
+}
+
+.clip-wrap>div{
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 5px dashed black;
+    float: left;
+}
+
+.clip1{
+    background-clip: border-box;
+}
+
+.clip2{
+    background-clip: padding-box;
+}
+
+.clip3{
+    background-clip: content-box;
+}
+
+.bg-image{
+    height: 500px;
+    background-image: url(/image/river.png);
+}
+
+.test-div{
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    margin: 30px;
+    float: left;
+    background-image: url(/image/kakao.jpg);
+}
+
+.repeat-wrap{
+    overflow: hidden;
+}
+
+.repeat-1{
+    background-repeat: repeat;
+}
+
+.repeat-2{
+    background-repeat: repeat-x;
+}
+
+.repeat-3{
+    background-repeat: repeat-y;
+}
+
+.repeat-4{
+    background-repeat: no-repeat;
+}
+
+.position-wrap{
+    overflow: hidden;
+}
+
+.position-wrap>div{
+    background-repeat: no-repeat;
+}
+
+.po1{
+    background-position: left bottom;
+}
+
+.po2{
+    background-position: center center;
+}
+
+.po3{
+    background-position: center bottom;
+}
+
+.po4{
+    background-position: 30%  70%;
+}
+
+.size1{
+    background-size: auto;
+}
+
+.size2{
+    background-size: contain;
+}
+
+.size3{
+    background-size: cover;
+}
+
+.size4{
+    background-size: 30%;
+}

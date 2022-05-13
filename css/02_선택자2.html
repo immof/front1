@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자2</title>
+    <link rel="stylesheet" href="css/selctor2.css"
+</head>
+<body>
+    <h2>속성 선택자</h2>
+    <p>기본 선택자 뒤에 []을 이용하여 속성과 속성 값을 사용</p>
+    <div name="name1" class="div=class1">div1</div>
+    <div name="name2" class="div=class2">div1</div>
+    <div name="name3" class="div=class3">div1</div>
+    <div name="name4" class="class-div">div1</div>
+    <hr>
+    <h2>자손선택자/후손선택자</h2>
+    <p>자손 선택자 : 바로 아래 하위 요소 / 후손 선택자 : 하위 요소 전체</p>
+    <pre>자손 선택자 : 선택자 > 자손 선택자 {color:red;} / 
+        후손 선택자 : 선택자 후손 선택자 {color:red;}
+    </pre>
+    <div id="div1">
+        <h4>나는 div1의 자손입니다.</h4>
+        <h3>나는 div1의 자손입니다.</h3>
+    </div>
+    <ul id="'ul1">
+        리스트 태그
+        <li>ul1의 자손이면서 div1의 후손</li>
+        <li>ul1의 자손이면서 div1의 후손</li>
+    </ul>
+    <ul id="ul2">
+        <li>ul2의 자손</li>
+    </ul>
+    <br>
+    아이디 : <input type="text" name="id"><br>
+    비밀번호 : <input type="password" name="pw"><br>
+</body>
+</html>

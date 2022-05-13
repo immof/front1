@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang=ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항작성하기</title>
+    <link rel="stylesheet" href="/공지사항작성하기.css">
+</head>
+<body>
+    <div>
+        <table class="hearder">
+            <tr class="all">공지사항 작성하기</tr>
+            <form action="insert.no" method="post"></form>
+            <tr>
+                <td>제목</td>
+                <td><input type="text" name="title" placeholder="제목을 입력하시오." id="title"></td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td><input type="text" name="content" id="content" placeholder="내용을 입력하시오." wrap="viewport"></td>
+            </tr>
+            <tr>
+                <td>첨부파일</td>
+                <td><input type="file" value="파일 선택" name="uploadFile"></td>
+            </tr>
+            <td><input type="submit" value="작성하기"></td>
+        </table>
+        <hr>
+        <table border="1" class="b">
+            <tr>
+                <td>번호</td>
+                <td colspan="2">제목</td>
+                <td>작성자</td>
+                <td>작성일</td>
+                <td>조회수</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>공지사항 제목 9
+                </td>
+                <td>
+                    <input type="button" value="바로가기">
+                </td>
+                <td>user01</td>
+                <td>2021-03-29</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>공지사항 제목 9
+                </td>
+                <td>
+                    <input type="button" value="바로가기">
+                </td>
+                <td>user01</td>
+                <td>2021-03-29</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>공지사항 제목 9
+                </td>
+                <td>
+                    <input type="button" value="바로가기">
+                </td>
+                <td>user01</td>
+                <td>2021-03-29</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>공지사항 제목 9
+                </td>
+                <td>
+                    <input type="button" value="바로가기">
+                </td>
+                <td>user01</td>
+                <td>2021-03-29</td>
+                <td>34</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

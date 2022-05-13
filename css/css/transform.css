@@ -1,0 +1,105 @@
+img{
+    width: 250px;
+    height: 200px;
+}
+
+.trans1:hover{
+    transform: translateX(100px);
+}
+
+.trans2:hover{
+    transform: translateY(100px);
+}
+
+.trans3:hover{
+    transform: translate(100px,100px);
+}
+
+.trans4:hover{
+    transform: scaleX(2);
+}
+
+.trans5:hover{
+    transform: scaleY(2);
+}
+
+.trans6:hover{
+    transform: scale(1.5,1.5);
+}
+
+.trans7:hover{
+    transform: rotate(45deg);
+}
+
+.div{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: #f00;
+}
+
+.trans8{
+    transition-duration: 2s;
+}
+
+.trans8:hover{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+.trans9{
+    transition-property: background-color,width,height,transform;
+    transition-duration: 5s,1s,1s,3s;
+}
+
+.trans9:hover{
+    background-color: yellow;
+    width: 250px;
+    height: 250px;
+    transform: rotate(180deg);
+}
+
+.trans10{
+    transition-duration: 2s;
+}
+
+.trans10:hover{
+    transition-delay: 2s;
+    background-color: yellowgreen;
+    transform: rotate(180deg);
+}
+
+#img-box{
+    width: 300px;
+    height: 200px;
+    border: 5px dashed red;
+    overflow: hidden;
+}
+
+#img-box>img{
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+}
+
+#img-box>img:hover{
+    transform: scale(1.5,1.5);
+}
+
+#btn{
+    width: 300px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(to right, #21d3fd 0%, #b721ff 50%, #21d4fd 100%);
+    border-radius: 50px;
+    background-size: 200% 100%;
+    transition: background-position 1s;
+}
+
+#btn:hover{
+    cursor: pointer;
+    background-position: 100% 100%;
+}

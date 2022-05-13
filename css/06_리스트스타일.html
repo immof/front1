@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트스타일</title>
+    <style>
+        .ull{
+            list-style-type: cicle;
+        }
+        .ul2{
+            list-style-type: square;
+        }
+        .ul3{
+            list-style-type: none;
+        }
+        .ol{
+            list-style-type: lower-roman;
+        }
+        .ul4{
+            list-style-image: url(image/kakao.jpg);
+        }
+        .ul5{
+            list-style-position: inside;
+        }
+        .ul6{
+            list-style-position: outside;
+        }
+        .ul7{
+            list-style: square inside url(image/kakao.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>목록관련스타일</h1>
+    <hr>
+    <h3>list-style-type : 목록 기호의 스타일을 지정</h3>
+    <pre>
+        ul : 선택자{list-style-type : discs | circle | square | none}
+        ol : 선택자{list-style-type : decimal | decimal-leading-zero | lower-roman | upper_roman | lower-alpha | upper-alpha}
+    </pre>
+    <ul class="ul1">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <ul class="ul2">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <ul class="ul3">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <ol class="ol1">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ol>
+    <hr>
+    <h3>list-style-image : 기호 대신 이미지를 사용</h3>
+    <pre>선택자{list-style-image: url(이미지 파일 경로)}</pre>
+    <ul class="ul4">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <hr>
+    <h3>list-style-positoin : 목록기호 들여쓰기 여부</h3>
+    <pre>선택자 {list-style-positoin : inside | outsite}</pre>
+    <ul class="ul5">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <ul class="ul6">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <hr>
+    <h3>list-style : 목록 스타일을 한 번에 지정하는 속성</h3>
+    <pre>선택자{list-style : type position image}</pre>
+</body>
+</html>

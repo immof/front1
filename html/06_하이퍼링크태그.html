@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼링크</title>
+</head>
+<body>
+    <h1 id="top">문서시작</h1>
+    <!-- 시스템 내부에 있는 페이지로 이동할 때 -->
+    <a href="01_글자관련태그.html">01. 글자관련태그로이동</a>
+    <a href="02_목록관련태그.html">02. 목록관련태그로이동</a>
+    <!--
+        target : href 경로의 파일이 열리는 위치를 지정
+        _self : 현재창을 변경
+        _blank : 새창을 띄워서 문서 열기
+        _parent : 부모창에서 문서일기(부모창 -> 현재 창을 열어준 창)
+        _top : 최상위 창
+    -->
+    <!-- 시스템 외부에 있는 페이지로 이동할 때-->
+    <a href="http://www.naver.com">네이버로 이동</a><br>
+    
+    <a href="http://www.naver.com"><img src="/image/disk.jpg"></a>
+    <hr>
+    <img src="image/dog.jpg" usemap="#dog">
+    <map name="dog">
+        <area shape="circle" coords="261,96,84" href="http://www.naver.com" target="_self">
+        <area shape="circle" coords="442,259,67" href="image/disk.jpg" target="_self">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!-- 해당 문서 내부로이동-->
+        <a href="#top">제일 위로</a>
+    </map>
+</body>
+</html>

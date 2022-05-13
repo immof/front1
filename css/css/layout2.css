@@ -1,0 +1,149 @@
+.div{
+    width: 200px;
+    height: 200px;
+    border: 10px dashed black;
+    padding: 50px;
+    display: inline-block;
+}
+
+.d1{
+    box-sizing: content-box;
+}
+
+.d2{
+    box-sizing: border-box;
+}
+
+.outer{
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.in1{
+    width: 300px;
+    height: 300px;
+    background-color: cadetblue;
+    position: absolute;
+}
+
+.in2{
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+ 
+}
+
+.in3{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#fixed{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    position: fixed;
+    top: 100px;
+}
+
+.vi{
+    background-color: black;
+}
+
+.vi1{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,0,0,0.5);
+    visibility: visible;
+
+}
+
+.vi2{
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+    visibility: hidden;
+}
+
+.vi3{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,0,0,1);
+    opacity: 0.5;
+}
+
+#vi1,#vi3{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.z-wrap>div{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+}
+
+.z-1{
+    background-color: aqua;
+}
+
+.z-2{
+    background-color: antiquewhite;
+    top: 50px;
+    left: 50px;
+}
+
+.z-3{
+    background-color: cornflowerblue;
+    top: 100px;
+    left: 100px;
+}
+
+.float{
+    background-color: cornflowerblue;
+    overflow: hidden;
+}
+
+.float>div{
+    float: left ;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.clear{
+    
+}
+
+.over{
+    width: 100px;
+    height:100px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.over1{
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.over2{
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.over3{
+    overflow: scroll;
+}
+
+.over4{
+    overflow: auto;
+}

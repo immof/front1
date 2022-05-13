@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규표현식 회원가입</title>
+    <script src="/jquery/jquery-3.6.0.js"></script>
+    <script src="/jquery/join.js"></script>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <hr>
+    <form action="join.html" method="post" autocomplete="off">
+        <table>
+            <tr>
+                <th>아이디</th>
+                <td>
+                    <input type="text" name="id">
+                    <span class="comment"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td>
+                    <input type="password" name="pw">
+                    <span class="comment"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>비밀번호 확인</th>
+                <td>
+                    <input type="password" name="pwRe">
+                    <span class="comment"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td>
+                    <input type="text" name="name">
+                    <span class="comment"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>전화번호</th>
+                <td>
+                    <input type="text" name="phone1">
+                    -
+                    <input type="text" name="phone2">
+                    -
+                    <input type="text" name="phone3">
+                    <span class="comment"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td>
+                    <input type="text" name="email">
+                    <span class="comment"></span>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="submit" value="회원가입">
+                    <input type="reset" value="취소">
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
